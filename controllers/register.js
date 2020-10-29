@@ -5,7 +5,7 @@
 const handleRegister=(req,res,db,bcrypt)=>{
 	const {email,name,password}=req.body;
 	if(!email||!name||!password){
-      return res.status(400).json('please fill thefields');
+      return res.status(400).json('please fill the fields');
 	}
 
 // bcrypt.hash(password, null, null, function(err, hash) {
