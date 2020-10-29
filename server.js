@@ -27,7 +27,7 @@ app.use(bodyParser.json());
 
 
 
-app.get('/',(req, res)=>{res.send('it is getting started')});
+app.get('/',(req, res)=>{res.send('it is getting started')})
 
 app.post('/signin', (req,res)=>{signin.handleSignin(req,res,db,bcrypt)})
 
