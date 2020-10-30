@@ -8,6 +8,7 @@ const signin= require('./controllers/signin');
 const profile=require('./controllers/profile');
 const image=require('./controllers/image');
 
+app.use(cors());
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0; 
 const db=knex({
   client: 'pg',
@@ -23,7 +24,7 @@ const db=knex({
 
 const app=express();
 
-app.use(cors());
+
 app.use(bodyParser.json());
 
 
